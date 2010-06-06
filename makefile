@@ -1,6 +1,9 @@
 .PHONY: clean
 
-count_words: count_words.o lexer.o -lfl
+VPATH = src
+CPPFLAGS = -I include
+
+count_words: counter.o lexer.o -lfl
 
 clean:
 	rm count_words
