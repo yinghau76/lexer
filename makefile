@@ -3,7 +3,7 @@
 VPATH = src
 CPPFLAGS = -I include
 
-count_words: counter.o lexer.o -lfl
+count_words: counter.o lexer.o 
 
 clean:
 	-rm count_words

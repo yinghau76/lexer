@@ -1,6 +1,8 @@
 #include "lexer.h"
 #include "counter.h"
 
+void yywrap() {}
+
 void counter(int counts[4])
 {
 	while (yylex())
